@@ -1,0 +1,106 @@
+nav {
+  background-color: mediumaquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+h2 {
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  color: rgb(155, 18, 18);
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+ul li {
+  list-style: none;
+  padding: 0px 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: azure;
+  font-size: 24px;
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+  color: darkred;
+}
+
+ul li a.active {
+  color: darkred;
+  text-decoration: underline;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: min-content;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: mediumaquamarine;
+  font-size: 30px;
+  width: 50%;
+  padding: 70px;
+  border-radius: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {
+  flex-grow: 1; /* Allow the textarea to grow and fill available space */
+  flex-shrink: 0; /* Prevent the textarea from shrinking below its content size */
+  flex-basis: auto; /* Initial size based on content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: auto; /* Add scrollbars if content overflows */
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Set a minimum height */
+  min-width: 100px;
+}
+
+.rounded-button {
+  border-radius: 5px;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border: none;
+}
+
+.rounded-button:hover {
+  transform: translateY(-3px); /* Lift the button slightly */
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    flex-direction: column;
+  }
+
+  div {
+    margin-top: 180px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  div {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS_Files/ContactUs.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Contact Us</h2>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Location.html">Location</a></li>
+          <li><a href="ContactUs.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="flex-container">
+        <form action="#" method="post">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value="Aung Myat"
+            required
+          /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="aungmyat@example.com"
+            required
+          /><br />
+          <label for="message">Message/Inquiry</label><br />
+          <br />
+          <textarea
+            id="text-area"
+            name="message"
+            placeholder="Your message!"
+          ></textarea
+          ><br />
+          <input type="submit" value="Submit" class="rounded-button" /><br />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
